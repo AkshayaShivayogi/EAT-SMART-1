@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EAT-SMART • Daily Intake</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>EAT-SMART • Daily Intake</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="profile.html">Profile</a>
+      <a href="intake.html">Intake</a>
+      <a href="plan.html">Plan</a>
+      <a href="report.html">Report</a>
+    </nav>
+  </header>
+  <main>
+    <section class="grid">
+      <div class="card">
+        <h2>Log Food</h2>
+        <div class="row"><label>Day</label><select id="daySelect"></select></div>
+        <div class="row"><label>Food</label><select id="foodSelect"></select></div>
+        <div class="row"><label>Quantity</label><input id="foodQty" type="number" step="0.5" value="1"></div>
+        <div class="row actions"><button id="btnAddFood">Add to Day</button><a href="plan.html"><button class="secondary">Go to Plan</button></a></div>
+        <div id="dailySummary"></div>
+      </div>
+      <div class="card">
+        <h2>Health Conditions</h2>
+        <div class="row"><label>Condition</label><input id="condInput" placeholder="e.g., fever, accident"></div>
+        <div class="row actions"><button id="btnAddCond">Add Condition</button></div>
+        <ul id="condList"></ul>
+      </div>
+    </section>
+  </main>
+  <footer><small>Log your meals to improve weekly insights</small></footer>
+  <script type="module" src="js/intake.js"></script>
+</body>
+</html>

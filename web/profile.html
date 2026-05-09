@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EAT-SMART • Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>EAT-SMART • Profile & BMI</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="profile.html">Profile</a>
+      <a href="intake.html">Intake</a>
+      <a href="plan.html">Plan</a>
+      <a href="report.html">Report</a>
+    </nav>
+  </header>
+  <main>
+    <section class="grid">
+      <div class="card">
+        <h2>Your Details</h2>
+        <form id="profileForm">
+          <div class="row"><label>Name</label><input id="name" required></div>
+          <div class="row"><label>Age</label><input id="age" type="number" min="1" required></div>
+          <div class="row"><label>Weight (kg)</label><input id="weight" type="number" step="0.1" required></div>
+          <div class="row"><label>Height (cm)</label><input id="height" type="number" step="0.1" required></div>
+          <div class="row"><label>Goal</label>
+            <select id="goal">
+              <option value="maintain">Maintain Weight</option>
+              <option value="loss">Weight Loss</option>
+              <option value="gain">Weight Gain</option>
+            </select>
+          </div>
+          <div class="row"><label>Diet Type</label>
+            <select id="dietType">
+              <option value="veg">Vegetarian</option>
+              <option value="nonveg">Non-Vegetarian</option>
+            </select>
+          </div>
+          <div class="row actions"><button type="button" id="btnSaveProfile">Save Profile</button></div>
+        </form>
+      </div>
+      <div class="card">
+        <h2>BMI & Tips</h2>
+        <div id="bmiResult"></div>
+        <ul id="bmiTips"></ul>
+        <h3>Diet Suggestions</h3>
+        <ul id="dietSuggest"></ul>
+      </div>
+    </section>
+  </main>
+  <footer><small>Save your profile to personalize your plan</small></footer>
+  <script type="module" src="js/profile.js"></script>
+</body>
+</html>

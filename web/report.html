@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EAT-SMART • Weekly Report</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>EAT-SMART • Weekly Report</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="profile.html">Profile</a>
+      <a href="intake.html">Intake</a>
+      <a href="plan.html">Plan</a>
+      <a href="report.html">Report</a>
+    </nav>
+  </header>
+  <main>
+    <section class="grid">
+      <div class="card">
+        <h2>Calories Trend</h2>
+        <canvas id="caloriesChart"></canvas>
+      </div>
+      <div class="card">
+        <h2>Insights</h2>
+        <h3>Tips</h3>
+        <ul id="tips"></ul>
+        <h3>Motivation</h3>
+        <ul id="motivation"></ul>
+      </div>
+    </section>
+  </main>
+  <footer><small>Stay consistent and review weekly trends</small></footer>
+  <script type="module" src="js/report.js"></script>
+</body>
+</html>

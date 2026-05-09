@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EAT-SMART • Login</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>EAT-SMART • Login</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="profile.html">Profile</a>
+      <a href="intake.html">Intake</a>
+      <a href="plan.html">Plan</a>
+      <a href="report.html">Report</a>
+    </nav>
+  </header>
+  <main>
+    <section class="grid">
+      <div class="card">
+        <h2>Account</h2>
+        <form id="authForm">
+          <div class="row"><label>Username</label><input id="authUsername" required></div>
+          <div class="row"><label>Password</label><input id="authPassword" type="password" required></div>
+          <div class="row actions">
+            <button type="button" id="btnLogin">Login</button>
+            <button type="button" id="btnRegister" class="secondary">Register</button>
+          </div>
+          <div id="authMsg"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer><small>Secure local account stored in your browser</small></footer>
+  <script type="module" src="js/login.js"></script>
+</body>
+</html>
