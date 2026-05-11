@@ -68,22 +68,31 @@ The EAT-SMART system follows a modular architecture where user input data is pro
 ---
 
 # 📸 Screenshots
+# 📸 Screenshots
 
 ## Login Page
-![Login](screenshots/login.png)
+![Login](screenshots/login-page.png)
 
 ## BMI Page
 ![BMI](screenshots/bmi-page.png)
 
-## Dashboard
-![Dashboard](screenshots/dashboard.png)
+## Dashboard Page
+![Dashboard](screenshots/dashboard-page.png)
 
 ## Food Intake Page
-![Food Intake](screenshots/food-intake.png)
+![Food Intake](screenshots/food-intake-page.png)
 
 ## Report Page
 ![Report](screenshots/report-page.png)
 
+## Checkbox View
+![Checkbox](screenshots/check-box.png)
+
+## Code Implementation - 1
+![Code 1](screenshots/code-implementation-1.png)
+
+## Code Implementation - 2
+![Code 2](screenshots/code-implementation-2.png)
 ---
 
 # ▶️ How to Run the Project
